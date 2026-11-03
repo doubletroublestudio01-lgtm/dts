@@ -1,4 +1,3 @@
-
 import type { Metadata } from "next";
 import { getServiceCityData } from "@/lib/service-city";
 import Link from "next/link";
@@ -69,12 +68,17 @@ export const metadata: Metadata = {
 
 // --------------------------------------------------
 // STRUCTURED DATA
+// SEO AUDIT FIX #10
 // --------------------------------------------------
 
 const locationsSchema = {
   "@context": "https://schema.org",
 
   "@graph": [
+    // ----------------------------------------------
+    // COLLECTION PAGE SCHEMA
+    // ----------------------------------------------
+
     {
       "@type": "CollectionPage",
 
@@ -102,6 +106,36 @@ const locationsSchema = {
 
       inLanguage: "en-IN",
     },
+
+    // ----------------------------------------------
+    // SERVICE SCHEMAS
+    // SEO AUDIT FIX #10
+    // ----------------------------------------------
+
+    ...ALL_SEO_SERVICE_SLUGS.map((serviceSlug) => ({
+      "@type": "Service",
+
+      "@id": `${SITE.url}/services/${serviceSlug}#service`,
+
+      name: SEO_SERVICES[serviceSlug].name,
+
+      serviceType: SEO_SERVICES[serviceSlug].name,
+
+      url: `${SITE.url}/services/${serviceSlug}`,
+
+      provider: {
+        "@id": `${SITE.url}/#organization`,
+      },
+
+      areaServed: {
+        "@type": "Country",
+        name: "India",
+      },
+    })),
+
+    // ----------------------------------------------
+    // BREADCRUMB SCHEMA
+    // ----------------------------------------------
 
     {
       "@type": "BreadcrumbList",

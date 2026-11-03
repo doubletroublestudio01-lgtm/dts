@@ -1,10 +1,11 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
+  skipTrailingSlashRedirect: true,
+
   allowedDevOrigins: [
     "192.168.1.3",
   ],
-
   images: {
     unoptimized: true,
     remotePatterns: [
@@ -278,14 +279,24 @@ const nextConfig = {
   source:
     "/blog/conversion-optimization-luxury-brands-high-ticket-funnel-strategy",
   destination:
-    "/blog/conversion-optimization-luxury-brands-high-ticket-funnel",
+    "/blog/building-conversion-focused-marketing-funnels",
   permanent: true,
 },
 {
   source:
-    "/blog/creating-luxury-brand-funnel-awareness-conversion",
+    "/blog/conversion-optimization-luxury-brands-high-ticket-funnel",
   destination:
-    "/blog/creating-luxury-brand-funnel-awareness-to-conversion",
+    "/blog/building-conversion-focused-marketing-funnels",
+  permanent: true,
+},
+{
+  source: "/blog/creating-luxury-brand-funnel-awareness-conversion",
+  destination: "/blog/building-conversion-focused-marketing-funnels",
+  permanent: true,
+},
+{
+  source: "/blog/creating-luxury-brand-funnel-awareness-to-conversion",
+  destination: "/blog/building-conversion-focused-marketing-funnels",
   permanent: true,
 },
 {
