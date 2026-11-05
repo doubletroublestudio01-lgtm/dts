@@ -97,25 +97,22 @@ export default function WebsiteDigitalHero() {
           </div>
 
           <h1
-            className="
-              mt-6
-              text-[40px]
-              font-bold
-              leading-[1.03]
-              tracking-[-2px]
-              text-[#0D2444]
-              sm:text-[48px]
-              md:text-[56px]
-              lg:text-[62px]
-            "
-            style={{ fontFamily: serifFont }}
-          >
-            Websites That Look Premium,
-            <span className="text-[#6288B9]">
-              {" "}
-              Feel Effortless and Stay Reliable.
-            </span>
-          </h1>
+  className="
+    mt-6
+    text-[40px]
+    font-bold
+    leading-[1.03]
+    tracking-[-2px]
+    text-[#0D2444]
+    sm:text-[48px]
+    md:text-[56px]
+    lg:text-[62px]
+  "
+  style={{ fontFamily: serifFont }}
+>
+  Website Development Company{" "}
+  <span className="text-[#6288B9]">in Mumbai</span>
+</h1>
 
           <p className="mx-auto mt-6 max-w-[760px] text-[15px] leading-[1.85] text-[#5B6472] sm:text-[17px]">
             Double Trouble Studio designs, develops and manages modern websites

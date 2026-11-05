@@ -111,12 +111,15 @@ export default function WebsiteDevelopmentFaq() {
   };
 
   return (
-    <section className="relative overflow-hidden bg-[#F5F7FB] px-4 py-16 sm:px-6 md:py-20 lg:px-8">
+    
+    <section
+      id="faq"
+    className="relative overflow-hidden bg-[#F5F7FB] px-4 py-16 sm:px-6 md:py-20 lg:px-8">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(faqSchema),
-        }}
+       dangerouslySetInnerHTML={{
+  __html: JSON.stringify(faqSchema).replace(/</g, "\\u003c"),
+}}
       />
 
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(98,136,185,0.10),transparent_32%),radial-gradient(circle_at_bottom_left,rgba(13,36,68,0.08),transparent_32%)]" />

@@ -12,11 +12,11 @@ type FaqItem = {
   question: string;
   answer: string;
 };
+type FAQProps = {
+  faqs: FaqItem[];
+};
 
-export default function FAQ() {
-  const faqs: FaqItem[] = [
-    // KEEP ALL YOUR EXISTING FAQ DATA HERE
-  ];
+export default function FAQ({ faqs }: FAQProps) {
 
   const faqSchema = {
     "@context": "https://schema.org",

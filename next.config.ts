@@ -156,13 +156,7 @@ const nextConfig = {
     "/blog/measuring-and-adjusting-tools-and-metrics-for-roadmap-success",
   permanent: true,
 },
-{
-  source:
-    "/blog/case-studies-website-transformations-for-automotive-hospitality-clients",
-  destination:
-    "/blog/automotive-hospitality-website-transformation-case-studies",
-  permanent: true,
-},
+
 {
   source:
     "/blog/building-secure-websites-premium-clients-data-protection-trust-signals",

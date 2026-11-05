@@ -172,6 +172,12 @@ const aiVideoVFXSchema = {
       name: "Double Trouble Studio",
       alternateName: "DTS World",
       url: "https://www.dtsworld.in/",
+       sameAs: [
+        "https://www.linkedin.com/company/doubletrouble-studio/",
+        "https://www.instagram.com/doubletrouble_studio/",
+        "https://www.facebook.com/profile.php?id=61585435434487",
+        "https://x.com/trouble90100",
+      ],
       logo: "https://www.dtsworld.in/logo.png",
       image: "https://www.dtsworld.in/og-image.jpg",
       description:
@@ -460,108 +466,9 @@ const aiVideoVFXSchema = {
         { "@type": "ListItem", position: 8, name: "Pan India" },
       ],
     },
-    {
-      "@type": "FAQPage",
-      "@id": "https://www.dtsworld.in/services/ai-video-vfx/#faq",
-      mainEntity: [
-        {
-          "@type": "Question",
-          name: "What is AI video production?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "AI video production is the process of creating video content using artificial intelligence tools, creative direction, prompts, visual planning, editing and post-production. It can be used for brand films, product videos, CGI ads, reels, launch videos, event promos and digital campaigns.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "What are VFX services?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "VFX services involve adding, enhancing or manipulating visual elements in a video during post-production. This can include CGI objects, compositing, background extensions, object removal, clean-up, motion graphics, screen replacement, lighting effects and cinematic enhancements.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Does Double Trouble Studio provide AI video production services in India?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes. Double Trouble Studio provides AI video production, CGI ads, VFX editing, brand films, product videos, social media reels and campaign-ready video content for brands across India.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Can AI videos be used for brand campaigns?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes. AI videos can be used for brand campaigns, product launches, luxury commercials, social media reels, paid ads, website hero videos, event teasers, hospitality campaigns and digital storytelling.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Do you create CGI advertising videos?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes. Double Trouble Studio creates CGI advertising videos where products, brand elements or objects appear in visually striking digital environments for social media, launches, ads and brand awareness campaigns.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "What type of AI videos can you create?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Double Trouble Studio can create AI brand films, AI product videos, CGI product ads, Instagram reels, event launch videos, luxury commercial videos, music video visuals, website hero videos, explainer videos and motion graphic videos.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Can you create videos for Instagram and YouTube?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes. Videos can be created for Instagram Reels, YouTube Shorts, YouTube videos, social media ads, stories, feed posts, website visuals, landing pages and digital campaigns.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "What video formats do you deliver?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Double Trouble Studio can deliver videos in 9:16 for reels and shorts, 4:5 for premium feed videos, 1:1 for square campaign edits and 16:9 for YouTube, websites, presentations, event screens and brand films.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Do I need a script before starting an AI video project?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "No. A complete script is not required to begin. You can share your brand goal, product details, reference style, campaign message, required format and deadline. The creative direction can be shaped from there.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Can AI video and VFX be used for product launches?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes. AI video and VFX can be used to create product launch videos, CGI ads, teaser edits, launch visuals, product demonstrations and campaign cutdowns for social media and digital platforms.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "How long does an AI video or VFX project take?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "AI video and VFX timelines depend on the concept, number of scenes, output formats, animation complexity, editing requirements, revision rounds, assets provided and campaign deadline.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "How much does AI video production cost in India?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "AI video production cost in India depends on video length, creative complexity, number of scenes, CGI or VFX requirements, output formats, editing, sound design, motion graphics, revisions and delivery timeline.",
-          },
-        },
-      ],
-    },
+   
+       
+  
   ],
 };
 

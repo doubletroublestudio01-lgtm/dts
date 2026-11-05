@@ -83,14 +83,13 @@ const FAQ_ID =
   `${PAGE_URL}#faq`;
 
 export const metadata: Metadata = {
-  title: {
+    title: {
     absolute:
-      "Website Development, SEO & Digital Marketing India | Double Trouble Studio",
+      "Website Development Company in Mumbai | Double Trouble Studio",
   },
 
   description:
-    "Website development, SEO, ecommerce, social media, paid ads and lead-generation services for businesses and growing brands across India.",
-
+    "Website development company in Mumbai for hotels, restaurants and growing brands. Premium, fast sites with SEO and lead-ready pages. Get a free website check.",
   applicationName:
     "Double Trouble Studio",
 
@@ -172,11 +171,10 @@ export const metadata: Metadata = {
       "Double Trouble Studio",
 
     title:
-      "Website Development, SEO & Digital Marketing Services in India",
+      "Website Development Company in Mumbai | Double Trouble Studio",
 
     description:
-      "Build a stronger digital presence with custom websites, SEO, ecommerce development, social media marketing, paid advertising and lead-generation campaigns.",
-
+      "Website development company in Mumbai for hotels, restaurants and growing brands. Premium, fast sites with SEO and lead-ready pages. Get a free website check.",
     images: [
       {
         url:
@@ -914,9 +912,14 @@ const organizationSchema = {
     "DTS",
     "DTS World",
   ],
+   url: SITE_URL,
 
-  url:
-    SITE_URL,
+    sameAs: [
+    "https://www.linkedin.com/company/doubletrouble-studio/",
+    "https://www.instagram.com/doubletrouble_studio/",
+    "https://www.facebook.com/profile.php?id=61585435434487",
+    "https://x.com/trouble90100",
+  ],
 
   logo: {
     "@id":
@@ -1085,16 +1088,14 @@ const webPageSchema = {
 
   url:
     PAGE_URL,
-
   name:
-    "Website Development, SEO & Digital Marketing India | Double Trouble Studio",
+    "Website Development Company in Mumbai | Double Trouble Studio",
 
   headline:
-    "Website Development, SEO & Digital Marketing Services in India",
+    "Website Development Company in Mumbai",
 
   description:
-    "Website development, SEO, ecommerce, social media, paid ads and lead-generation services for businesses and growing brands across India.",
-
+    "Website development company in Mumbai for hotels, restaurants and growing brands. Premium, fast sites with SEO and lead-ready pages. Get a free website check.",
   isPartOf: {
     "@id":
       WEBSITE_ID,

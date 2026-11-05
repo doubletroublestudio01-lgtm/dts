@@ -400,6 +400,12 @@ const organizationSchema = {
   legalName: "Double Trouble Studio Pvt. Ltd.",
   alternateName: ["DTS", "DTS World"],
   url: SITE_URL,
+    sameAs: [
+    "https://www.linkedin.com/company/doubletrouble-studio/",
+    "https://www.instagram.com/doubletrouble_studio/",
+    "https://www.facebook.com/profile.php?id=61585435434487",
+    "https://x.com/trouble90100",
+  ],
 
   logo: {
     "@id": "https://www.dtsworld.in/#logo",
@@ -892,7 +898,7 @@ const structuredDataBlocks = [
   featuredWorkSchema,
   industriesSchema,
   locationsSchema,
-  faqSchema,
+ 
 ];
 
 export default function GuestManagement() {

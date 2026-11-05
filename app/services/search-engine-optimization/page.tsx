@@ -105,6 +105,12 @@ const seoStructuredData = {
       alternateName: ["DTS", "DTS World"],
 
       url: `${siteUrl}/`,
+      sameAs: [
+        "https://www.linkedin.com/company/doubletrouble-studio/",
+        "https://www.instagram.com/doubletrouble_studio/",
+        "https://www.facebook.com/profile.php?id=61585435434487",
+        "https://x.com/trouble90100",
+      ],
 
       logo: {
         "@id": logoId,

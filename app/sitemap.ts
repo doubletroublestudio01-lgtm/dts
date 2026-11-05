@@ -84,15 +84,28 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.7,
     }));
 
-  const blogPostPages: MetadataRoute.Sitemap =
-    blogPosts
-      .filter((post) => post.slug && post.slug.trim() !== "")
-      .map((post) => ({
-        url: `${SITE.url}/blog/${post.slug}`,
-        lastModified: post.lastModified ?? now,
-        changeFrequency: "monthly",
-        priority: 0.7,
-      }));
+    const excludedBlogSlugs = new Set([
+    "creating-luxury-brand-funnel-awareness-conversion",
+    "creating-luxury-brand-funnel-awareness-to-conversion",
+    "conversion-optimization-luxury-brands-high-ticket-funnel-strategy",
+    "conversion-optimization-luxury-brands-high-ticket-funnel",
+  ]);
+
+  const blogPostPages: MetadataRoute.Sitemap = blogPosts
+    .map((post) => ({
+      ...post,
+      slug: (post.slug ?? "").trim().replace(/^\/+|\/+$/g, ""),
+    }))
+    .filter(
+      (post) =>
+        post.slug !== "" && !excludedBlogSlugs.has(post.slug)
+    )
+    .map((post) => ({
+      url: `${SITE.url}/blog/${post.slug}`,
+      lastModified: post.lastModified ?? now,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    }));
 
   return [
     ...staticPages,

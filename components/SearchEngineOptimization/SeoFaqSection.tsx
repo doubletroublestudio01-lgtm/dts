@@ -227,7 +227,7 @@ export default function SeoFaqSection() {
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "@id": "https://www.dtsworld.in/services/seo-agency-mumbai#faq",
+   "@id": "https://www.dtsworld.in/services/search-engine-optimization#faq",
     mainEntity: faqs.map((faq) => ({
       "@type": "Question",
       name: faq.question,
